@@ -33,9 +33,7 @@ if ($uploadOk == 0) {?><script>
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {?><script>
         alert("The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.");
-		/*Commented by saro
-		window.location.href="viewimages.php"
-		*/
+window.location.href="viewimages.php"
 </script><?php
     } else {?><script>
         alert("Sorry, there was an error uploading your file.");

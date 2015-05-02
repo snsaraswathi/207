@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+	<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+<script type="text/javascript">
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#image')
+                        .attr('src', e.target.result)
+                        .width(550)
+                        .height(550);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+</head>
+
+
+ <body>
+     <section class="forgot_password">
+	 
+        <div  >
+        <center class= "logo">Socket Snipers</center>
+        </div>
+        <div class ="container" id="password_form">
+           <div class="row">
+               <div class="col-md-4">
+			   <div class="form-group" id="form_spacing">
+				<form action="upload.php" class="dropzone" method="post" enctype="multipart/form-data">
+					<div class="fallback">
+					<input id="image-file" type="file" multiple />
+					</div>
+					</form> 
+						</div><br>
+                    <form method="post" action="upload.php" enctype="multipart/form-data">
+                        <div class="form-group" id="form_spacing">
+                            <label for="Browse" class="form_name" style="color: black; background-color: transparent;">Upload Your Image</label>
+                            <input type="file" name="fileToUpload" class="form-control input-lg" id="fileToUpload" onchange="readURL(this);">
+                       </div>
+                       <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10" id="button">
+                            <button type="submit" class="btn btn-default" name="submit" id="submit">Upload</button>
+                            </div>
+                        </div> 
+						
+					<div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10" id="button">
+							<div class="ScrollStyle">
+							
+						<img  id="image" src="#" alt="up image" class="ScrollStyle" />	
+						</div>						
+						</div>	
+						</div>
+						
+                    </form>
+				</div>
+			</div>
+		</div>
+		
+    </body>
+</html>
