@@ -1,0 +1,89 @@
+body
+{   top: 0;
+    overflow : auto;
+}
+.front_page{
+    background-image: url("cover.jpg"); 
+    background-color: rgb(228, 229, 231);
+    height:100vh;
+    width:100vw;
+    /*top:10px;
+*/    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-clip: inherit;
+    background-size: cover;
+    /*font-family: 'Quicksand', sans-serif;*/
+    
+}
+.logo{
+    font-family: 'Poiret One', cursive;
+    font-weight: 600; 
+    color: white;
+    font-size: 40px;
+    margin-left: 125px;
+  padding-top: 50px;
+}
+.container{
+    border: 1px solid black;
+    height:400px;
+    width:500px;
+    margin-top: 50px;
+    margin-left: 45px;
+    background-color: black;
+    opacity: 0.6;
+}
+#email{
+    width:400px;
+    padding-top: 65px;
+}
+.heading{
+    color: white;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+#password{
+    width:400px;
+}
+.form-control{
+    height:60px;
+    margin-left: 20px;
+}
+.checkbox{
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 23px;
+  width: 140px;
+}
+#check{
+    color: white;
+    font-family: 'Montserrat', sans-serif;   
+    margin-left: 5px;
+}
+#submit{
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #1e73bc;
+    border: 1px solid #1e73bc;
+    color: white;
+}
+#signin{
+    margin-left: 110px;
+   /* margin-top: -25px;*/
+   top: 50%;
+   transform: translateY(-35%);
+    height: 99px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;   
+    color: white;
+}
+.link_signin{
+    font-size: 20px;
+    color:#1e73bc;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
